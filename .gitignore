@@ -1,0 +1,4 @@
+# editor temp files
+.DS_Store
+*.pyc
+logs/*

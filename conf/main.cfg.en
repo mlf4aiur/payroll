@@ -1,0 +1,15 @@
+[main]
+sheet_names = EN
+column_names = Compellation,Month,Total Pay Amount,Retirement insurance,Unemployment insurance,Health insurance,Housing fund,Tax,Final Paying Amount,Others,Email
+employee_name = Compellation
+employee_mail = Email
+
+[mail]
+max_cells = 12
+subject = payslip
+from_addr = foo@example.com
+smtp_server = smtp.gmail.com
+starttls = true
+require_auth = true
+smtp_username = foo@example.com
+smtp_password = foobar

@@ -1,0 +1,15 @@
+[main]
+sheet_names = ZH
+column_names = 员工姓名,月份,本月应发工资,养老保险,失业保险,医疗保险,公积金,税金,实发工资,备注,邮箱
+employee_name = 员工姓名
+employee_mail = 邮箱
+
+[mail]
+max_cells = 12
+subject = 工资条
+from_addr = foo@example.com
+smtp_server = smtp.gmail.com
+starttls = true
+require_auth = true
+smtp_username = foo@example.com
+smtp_password = foobar
