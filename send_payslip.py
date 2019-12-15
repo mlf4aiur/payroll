@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 """
-send_payslip.py
+send_payroll.py
 
 Created by 4aiur on 2012-02-19.
 Copyright (c) 2012 4aiur. All rights reserved.
@@ -218,7 +218,7 @@ class Excel(object):
 
     tbody tr.odd { background: #F7F9FC; }
     </style>
-    <title>payslip</title>
+    <title>payroll</title>
   </head>
 <body>
 <table>
@@ -285,10 +285,10 @@ class Excel(object):
 
 def main():
     """Spawn Many Commands"""
-    parser = argparse.ArgumentParser(description="send payslip email to employees")
+    parser = argparse.ArgumentParser(description="send payroll email to employees")
     parser.add_argument("--version", action="version", version="%s" % (__version__))
     parser.add_argument("-r", metavar="read", dest="filename", default="example.xls",
-                    help="Specify source payslip excel filename, default name is example.xls.")
+                    help="Specify source payroll excel filename, default name is example.xls.")
     args = parser.parse_args()
     main_config = MainConfig(os.path.join("conf","main.cfg"))
     main_config.get_configs()
@@ -299,4 +299,3 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-

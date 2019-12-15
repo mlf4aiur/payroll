@@ -6,7 +6,7 @@ employee_mail = Email
 
 [mail]
 max_cells = 12
-subject = payslip
+subject = payroll
 from_addr = foo@example.com
 smtp_server = smtp.gmail.com
 starttls = true

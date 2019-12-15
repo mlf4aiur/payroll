@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 """
-test_send_payslip.py
+test_send_payroll.py
 
 Created by 4aiur on 2012-02-20.
 Copyright (c) 2012 4aiur. All rights reserved.
@@ -16,16 +16,16 @@ from pprint import pprint
 cwd = os.getcwd()
 app_path = os.path.abspath(os.path.join(cwd, "../"))
 sys.path.append(app_path)
-import send_payslip
+import send_payroll
 
 
 class TestExcel(unittest.TestCase):
 
     def setUp(self):
-        self.main_config = send_payslip.MainConfig(os.path.join("conf", "main.cfg"))
+        self.main_config = send_payroll.MainConfig(os.path.join("conf", "main.cfg"))
         self.main_config.get_configs()
         self.main_config.sheet_names = "CN,EN"
-        self.excel = send_payslip.Excel("example.xls", self.main_config)
+        self.excel = send_payroll.Excel("example.xls", self.main_config)
         return
 
     def tearDown(self):
